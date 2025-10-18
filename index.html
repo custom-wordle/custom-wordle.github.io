@@ -1,55 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./src/assets/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="Custom Wordle Puzzles: Create your own Wordle choose your words, set your rules, and share with friends. Perfect for personalized fun and unique challenges.">
-    <meta property="og:title" content="Wordle" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://i.imgur.com/FtTOO25.png" />
-    <meta property="og:description" content="Custom Wordle generation site with many options for personalization." />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Custom Wordle: Create and Your Own Unique Word Puzzles</title>
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-      }
-      .iframe-container {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-      }
-    </style>
 
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5B3582TBKD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5B3582TBKD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-5B3582TBKD');
+    gtag('config', 'G-5B3582TBKD');
+  </script>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicion.jpeg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <meta name="description"
+    content="Custom Wordle Puzzles: Create your own Wordle choose your words, set your rules, and share with friends. Perfect for personalized fun and unique challenges.">
+  <meta property="og:title" content="Wordle" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://custom-wordle.github.io/favicion.jpeg" />
+  <meta property="og:description" content="Custom Wordle Puzzles: Create your own Wordle choose your words, set your rules, and share with friends. Perfect for personalized fun and unique challenges." />
+  <title>Custom Wordle: Create and Your Own Unique Word Puzzles</title>
+  <link rel="canonical" href="https://custom-wordle.github.io/" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Custom Wordle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Custom Wordle is a free online game where you can create your own Wordle puzzles and challenge others to guess your secret word."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Custom Wordle free to play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Custom Wordle is completely free and can be played directly in your browser without any downloads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play Custom Wordle on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Custom Wordle works perfectly on all devices, including mobile and tablets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I make my own Wordle puzzle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Simply enter a word on the Custom Wordle website, generate the link, and share it with your friends to let them guess the word."
+      }
+    }
+  ]
+}
 </script>
-  </head>
-  <body>
-    <div id="app" class="iframe-container">
-      <iframe src="https://wordhurdle.co/custom-wordle.embed" allowfullscreen></iframe>
+
+  <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;line-height:1.6;color:#333;background-color:#f5f5f5}.container{max-width:1000px;margin:0 auto;padding:20px}.game-container{background:#2b2b2b;border-radius:12px;overflow:hidden;margin-bottom:30px;box-shadow:0 4px 20px rgba(0,0,0,0.3)}.game-iframe-wrapper{position:relative;width:100%;height:540px;background:#2b2b2b}.game-iframe{width:100%;height:100%;border:none;background:#2b2b2b}.controls-bar{background:white;padding:10px 15px;display:flex;align-items:center;justify-content:space-between;border-top:1px solid #e0e0e0}.game-info{display:flex;align-items:center;gap:12px}.game-logo{width:40px;height:40px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:bold;color:white;font-size:18px}.game-title{display:flex;flex-direction:column}.game-title h1{font-size:16px;font-weight:600;color:#333;margin:0}.game-title span{font-size:12px;color:#666}.control-buttons{display:flex;gap:8px}.control-btn{width:36px;height:36px;background:#f5f5f5;border:none;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.3s;color:#333}.control-btn:hover{background:#e0e0e0}.control-btn svg{width:20px;height:20px}.game-container:fullscreen{background:#2b2b2b;display:flex;flex-direction:column}.game-container:fullscreen .game-iframe-wrapper{height:calc(100vh - 60px)}.game-container:-webkit-full-screen{background:#2b2b2b;display:flex;flex-direction:column}.game-container:-webkit-full-screen .game-iframe-wrapper{height:calc(100vh - 60px)}.game-container:-moz-full-screen{background:#2b2b2b;display:flex;flex-direction:column}.game-container:-moz-full-screen .game-iframe-wrapper{height:calc(100vh - 60px)}.game-container:-ms-fullscreen{background:#2b2b2b;display:flex;flex-direction:column}.game-container:-ms-fullscreen .game-iframe-wrapper{height:calc(100vh - 60px)}.content-section{background:white;border-radius:12px;padding:30px;box-shadow:0 2px 10px rgba(0,0,0,0.1)}h1{color:#2c3e50;margin-bottom:20px;font-size:2em}h2{color:#34495e;margin-top:30px;margin-bottom:15px;font-size:1.5em}p{margin-bottom:15px;color:#555}ul,ol{margin-left:30px;margin-bottom:15px}li{margin-bottom:8px;color:#555}.play-button{display:inline-block;background:#6aaa64;color:white;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:bold;margin:15px 0;transition:background 0.3s}.play-button:hover{background:#5a9454}.tip-box{background:#fff3cd;border-left:4px solid #ffc107;padding:15px;margin:15px 0;border-radius:4px}.faq-item{margin-bottom:20px;padding:15px;background:#f8f9fa;border-radius:8px}.faq-item strong{color:#2c3e50}@media (max-width:768px){.container{padding:10px}.game-iframe-wrapper{height:590px}.content-section{padding:20px}h1{font-size:1.5em}h2{font-size:1.2em}.control-btn{width:32px;height:32px}.control-btn svg{width:18px;height:18px}}</style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="game-container" id="gameContainer">
+      <div class="game-iframe-wrapper">
+        <iframe src="https://mywordle.strivemath.com/" class="game-iframe" id="gameFrame" title="Custom Wordle Game"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="controls-bar">
+        <div class="game-info">
+          <div ><img src="/favicion.jpeg" class="game-logo" alt="Custom Wordle"  srcset="Custom Wordle"></div>
+          <div class="game-title">
+            <h1>Custom Wordle</h1>
+            <span>by Virtual Projects</span>
+          </div>
+        </div>
+        <div class="control-buttons">
+          <button class="control-btn" onclick="shareGame()" title="Share">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8" />
+              <polyline points="16 6 12 2 8 6" />
+              <line x1="12" y1="2" x2="12" y2="15" />
+            </svg>
+          </button>
+          <button class="control-btn" onclick="refreshGame()" title="Refresh">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 4 23 10 17 10" />
+              <polyline points="1 20 1 14 7 14" />
+              <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" />
+            </svg>
+          </button>
+          <button class="control-btn" onclick="toggleControls()" title="Controls">
+            <img src="/controls.png" alt="" srcset="">
+          </button>
+          <button class="control-btn" onclick="toggleFullscreen()" title="Fullscreen">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-    <script type="module" src="./src/main.js"></script>
-  </body>
+
+    <div class="content-section">
+      <h2>🕹️ Play Custom Wordle Online</h2>
+      <p>Custom Wordle is a fun, creative, and shareable twist on the viral Wordle game. It lets you create your own
+        secret word, share it with friends, and challenge them to guess it in just six tries. Whether you're playing
+        with friends, classmates, or family — Custom Wordle makes every puzzle personal!</p>
+
+      <p>🎯 No sign-up, no download — just pure fun and instant gameplay.</p>
+
+      <a href="https://custom-wordle.github.io/" class="play-button">👉 Play Now</a>
+
+      <h2>💡 What is Custom Wordle?</h2>
+      <p>Custom Wordle is an interactive word puzzle creator where players can make their own Wordle challenges. Instead
+        of solving random daily puzzles, you get to decide the secret word — and your friends must try to guess it using
+        hints from the colored tiles.</p>
+
+      <p>Each guess gives you instant feedback:</p>
+      <ul>
+        <li>🟩 Green: Correct letter in the right spot</li>
+        <li>🟨 Yellow: Correct letter, wrong spot</li>
+        <li>⬜ Gray: Letter not in the word</li>
+      </ul>
+
+      <p>It's a perfect mix of creativity and logic — a word game that keeps you thinking and laughing!</p>
+
+      <h2>🧩 How to Play Custom Wordle</h2>
+      <ol>
+        <li>Go to Custom Wordle website.</li>
+        <li>Type in your secret word.</li>
+        <li>Copy the shareable link generated for your puzzle.</li>
+        <li>Send the link to a friend or post it online.</li>
+        <li>Watch as they try to guess your word in six attempts!</li>
+      </ol>
+
+      <div class="tip-box">
+        💬 <strong>Tip:</strong> Choose a tricky word for a fun challenge — or an inside joke only your friends will
+        understand!
+      </div>
+
+      <h2>🌟 Game Features</h2>
+      <ul>
+        <li>🧠 Create your own custom word puzzles</li>
+        <li>🔗 Share puzzles instantly with friends</li>
+        <li>🎮 Play unlimited games</li>
+        <li>📱 Fully mobile-friendly</li>
+        <li>⚡ No sign-up or login needed</li>
+        <li>💬 Perfect for classrooms, challenges, and social fun</li>
+      </ul>
+
+      <h2>🏆 Why You'll Love Custom Wordle</h2>
+      <p>Custom Wordle gives you the power to design your own challenges and make each puzzle unique. It's not just a
+        game — it's a way to test vocabulary, have fun with friends, and make learning words exciting again. Perfect for
+        word game fans, students, and casual players who love quick brain challenges!</p>
+
+      <h2>💬 Tips & Tricks</h2>
+      <ul>
+        <li>Pick medium-length words (5–6 letters) for best gameplay.</li>
+        <li>Use uncommon letters like "Q" or "Z" for tough puzzles.</li>
+        <li>Try daily custom challenges with your friend group.</li>
+        <li>Share your best puzzles on social media to see who cracks them first!</li>
+      </ul>
+
+      <h2>❓ FAQs About Custom Wordle</h2>
+
+      <div class="faq-item">
+        <h3><strong>Q1: What is Custom Wordle?</strong></h3>
+        <p><span style="font-weight: 400;">&nbsp;Custom Wordle is a free online game where you can make your own Wordle
+            puzzles and challenge others to guess your secret word.</span></p>
+      </div>
+
+      <div class="faq-item">
+        <h3><strong>Q2: How do I play Custom Wordle?</strong></h3>
+        <p><span style="font-weight: 400;">&nbsp;Simply enter a word, share the link, and your friends can guess it
+            within six tries &mdash; just like the original Wordle.</span></p>
+      </div>
+
+      <div class="faq-item">
+        <h3><strong>Q3: Is Custom Wordle free to play?</strong></h3>
+        <p><span style="font-weight: 400;">&nbsp;Yes! It&rsquo;s 100% free, browser-based, and requires no account or
+            download.</span></p>
+      </div>
+
+      <div class="faq-item">
+        <h3><strong>Q4: Can I play Custom Wordle on mobile?</strong></h3>
+        <p><span style="font-weight: 400;">&nbsp;Absolutely! Custom Wordle works smoothly on all devices &mdash; from
+            desktop to mobile.</span></p>
+      </div>
+
+      <div class="faq-item">
+        <h3><strong>Q5: Can I make unlimited puzzles?</strong></h3>
+        <p><span style="font-weight: 400;">&nbsp;Yes, there&rsquo;s no limit. You can create as many custom Wordle
+            puzzles as you want and share them instantly.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleFullscreen() {
+      const container = document.getElementById('gameContainer');
+
+      if (!document.fullscreenElement &&
+        !document.webkitFullscreenElement &&
+        !document.mozFullScreenElement &&
+        !document.msFullscreenElement) {
+        // Enter fullscreen
+        if (container.requestFullscreen) {
+          container.requestFullscreen();
+        } else if (container.webkitRequestFullscreen) {
+          container.webkitRequestFullscreen();
+        } else if (container.mozRequestFullScreen) {
+          container.mozRequestFullScreen();
+        } else if (container.msRequestFullscreen) {
+          container.msRequestFullscreen();
+        }
+      } else {
+        // Exit fullscreen
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+          document.webkitExitFullscreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      }
+    }
+
+    function shareGame() {
+      const url = 'https://custom-wordle.github.io/';
+      const text = 'Check out Custom Wordle - Create and share your own word puzzles!';
+
+      if (navigator.share) {
+        navigator.share({
+          title: 'Custom Wordle',
+          text: text,
+          url: url
+        });
+      } else {
+        // Fallback - copy to clipboard
+        navigator.clipboard.writeText(url).then(() => {
+          alert('Game link copied to clipboard!');
+        });
+      }
+    }
+
+    function refreshGame() {
+      const iframe = document.getElementById('gameFrame');
+      iframe.src = iframe.src;
+    }
+
+    function toggleControls() {
+      alert('Game controls:\n\n• Type letters using your keyboard\n• Press Enter to submit guess\n• Press Backspace to delete letters\n• Green = correct position\n• Yellow = wrong position\n• Gray = not in word');
+    }
+  </script>
+</body>
+
 </html>
